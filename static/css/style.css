@@ -1,5 +1,5 @@
 body{
-  background-image: url(b.jpg);
+  background-image: url(img.png);
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -12,6 +12,10 @@ body{
 }
 
 .h1{
+  color: bisque;
+}
+
+.h3{
   color: bisque;
 }
 
