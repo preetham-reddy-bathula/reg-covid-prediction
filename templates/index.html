@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVID-19 INDIA PREDICT</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet"  href="{{url_for('static',filename='css/style.css') }}">
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1 class="h1">Predict COVID-19 Cases</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <h3 class="h3">Select Date</h3>
+      <input type="text" id="myDate" name="Date" placeholder="DD/MM/YYYY" onfocus="(this.type='date')" required="True">
+      <button type="submit" class="button">Predict</button>
+      
+    </form>
+    
+
+   <br>
+   <br>
+        <h3 class="result">{{ prediction_text }}</h3>
+   <h5 class="h5">This prediction might not be accurate, it is for experimental purpose</h5> 
+ </div>
+ 
+
+ <div class="watermark">
+   Created by Preetham
+ </div>
+
+
+</body>
+</html>
