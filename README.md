@@ -1,3 +1,3 @@
 # reg-covid-prediction
 Regression
-Link: https://covidpredictionindia.herokuapp.com/predict
+Link: https://covidpredictionindia.herokuapp.com/
